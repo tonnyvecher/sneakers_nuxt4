@@ -1,0 +1,29 @@
+{
+  "name": "tapir-test",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "svgo:icons": "svgo -f app/assets/icons"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.15.1",
+    "nuxt": "^4.3.1",
+    "vue": "^3.5.28",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@fontsource/golos-text": "^5.2.8",
+    "nuxt-svgo-loader": "^0.6.3",
+    "prettier": "^3.8.1",
+    "sass": "^1.97.3",
+    "svgo": "^4.0.0",
+    "typescript": "^5.9.3",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^3.2.4"
+  }
+}
