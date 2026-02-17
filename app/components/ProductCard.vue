@@ -122,7 +122,7 @@ const halfPrice = computed(() => {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
-    max-width: 150px;
+    min-width: 150px;
   }
 
   &__name-link {
