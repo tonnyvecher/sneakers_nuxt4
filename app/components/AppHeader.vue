@@ -30,7 +30,6 @@ import BurgerIcon from '../assets/icons/menu.svg'
 .header {
   &__inner {
     max-width: var(--container);
-    min-height: 80px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -44,6 +43,11 @@ import BurgerIcon from '../assets/icons/menu.svg'
     background-color: rgba(255, 0, 0, 1);
     display: block;
     flex: 0 0 auto;
+
+    @include m.mq-down(sm) {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   &__nav {

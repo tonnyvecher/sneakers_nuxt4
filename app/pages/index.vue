@@ -16,13 +16,8 @@
   align-items: start;
   justify-content: center;
   margin: 0 auto;
-  min-height: 100vh;
-  padding-inline: 60px;
+  min-height: 70vh;
   gap: 40px;
-
-  @include m.mq-down(xs) {
-    padding-inline: 20px;
-  }
 
   &__title {
     font-weight: 500;
