@@ -63,6 +63,10 @@ await useAsyncData('catalog:init', () => catalog.initSSR(), { server: true })
     @include m.mq-down(md) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    @include m.mq-down(sm) {
+      gap: 20px;
+    }
   }
 
   &__controls {

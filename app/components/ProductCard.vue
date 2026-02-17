@@ -110,6 +110,10 @@ const halfPrice = computed(() => {
     display: flex;
     flex-direction: column;
     gap: 5px;
+
+    @include m.mq-down(md) {
+      gap: 3px;
+    }
   }
 
   &__name {
@@ -118,6 +122,7 @@ const halfPrice = computed(() => {
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    max-width: 150px;
   }
 
   &__name-link {
@@ -134,6 +139,7 @@ const halfPrice = computed(() => {
     @include m.mq-down(md) {
       flex-direction: column;
       gap: 9px;
+      align-items: start;
     }
   }
 
