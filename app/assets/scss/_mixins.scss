@@ -1,0 +1,26 @@
+@use 'sass:map';
+@use './tokens' as t;
+
+@mixin mq-up($key) {
+  $value: map.get(t.$breakpoints, $key);
+
+  @if $value == null {
+    @error "Unknown breakpoint: #{$key}. Available: #{map.keys(t.$breakpoints)}";
+  }
+
+  @media (min-width: $value) {
+    @content;
+  }
+}
+
+@mixin mq-down($key) {
+  $value: map.get(t.$breakpoints, $key);
+
+  @if $value == null {
+    @error "Unknown breakpoint: #{$key}. Available: #{map.keys(t.$breakpoints)}";
+  }
+
+  @media (max-width: calc(#{$value} - 0.02px)) {
+    @content;
+  }
+}
