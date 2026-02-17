@@ -44,6 +44,10 @@ await useAsyncData('catalog:init', () => catalog.initSSR(), { server: true })
   justify-content: center;
   align-items: center;
 
+  @include m.mq-down(sm) {
+    gap: 40px;
+  }
+
   &__title {
     font-weight: 500;
     font-size: 42px;

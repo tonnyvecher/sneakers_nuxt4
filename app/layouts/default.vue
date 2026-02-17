@@ -21,19 +21,27 @@ import AppCursor from '../components/AppCursor.vue'
 @use '../assets/scss/mixins' as m;
 
 .app {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @include m.mq-down(sm) {
+    gap: 40px;
+  }
+
   &__header {
-    padding-inline: 60px;
+    padding: 20px 60px;
 
     @include m.mq-down(sm) {
-      padding-inline: 20px;
+      padding: 16px 20px;
     }
   }
 
   &__main {
-    padding: 100px 60px;
+    padding-inline: 60px;
 
     @include m.mq-down(sm) {
-      padding: 20px;
+      padding-inline: 20px;
     }
   }
 
